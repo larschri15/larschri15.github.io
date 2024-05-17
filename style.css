@@ -1,0 +1,126 @@
+#vue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'LMS PokeDex', Arial, sans-serif;
+}
+
+.card {
+    background-color: rgb(255, 249, 188);
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 450px;
+    justify-content: space-evenly;
+}
+
+.card:hover {
+    transform: rotate(2deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bababa;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+    color: #fff346;
+    font-family: 'LMS PokeDex', Arial, sans-serif;
+    text-shadow:
+        -1px 0 0 blue,
+        1px 0 0 blue,
+        0 -1px 0 blue,
+        0 1px 0 blue;
+}
+
+.inputs {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em auto;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+.inputs input[type="number"] {
+    padding: 0.7em;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    max-width: fit-content;
+}
+
+.inputs button {
+    background-color: #007bff;
+    color: #fff346;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.inputs button:hover {
+    background-color: #0d6aad;
+    color: #ffd700;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.moves {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 6px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer src="pokemon.js"></script>
+</head>
+<body>
+    <div id="vue">
+        <div class="card" :style="'background-color:' + typeColours[type]">
+        <h1>Pokédex</h1>
+        <div class="inputs">
+            <input type="number" v-model="id" @input="getPokemon(id)" placeholder="Voer Pokémon ID in">
+            <button @click="prev" variant="primary">Vorige</button>
+            <button @click="next" variant="primary">Volgende</button>
+        </div>
+        <div class="top">
+            <h2> {{name}}</h2>
+            <h2> #{{id}}</h2>
+        </div>
+        <h2> Aantal aanvallen: {{moves.length}} </h2>
+        <div class="container">
+            <img :src="spriteUrl">
+
+        </div>
+        <h3 class="type-po">{{type}} </h3>
+        <p>{{flavor}}</p>
+        <ul class="movess">
+        <li>{{moves[0].name}}</li>
+        <li>{{moves[1].name}}</li>
+        <li>{{moves[2].name}}</li>
+        <li>{{moves[3].name}}</li>
+        <li>{{moves[4].name}}</li>
+    </ul>
+
+</div>
+    <a href="https://nl.wikipedia.org/wiki/Pokémon" target="_blank">handige wikipedia</a>
+    </div>
+  <footer> <p>&copy; 2024 Lars Schrijvers</p></footer>
+</body>
+</html>
